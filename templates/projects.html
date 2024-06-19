@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="text-center">
+    <h1 class="text-4xl font-bold mb-8 text-accent">Projects</h1>
+    <div class="flex flex-wrap justify-center gap-8">
+        <div class="w-full md:w-1/2 bg-secondary p-4 rounded-lg shadow-lg flex flex-col justify-between">
+            <div>
+                <h2 class="text-2xl font-semibold mb-2 text-light">Chat Application with React and Docker</h2>
+                <p>Developed a chat application using React for the front-end and Express for the back-end. Implemented MongoDB as a dedicated NoSQL database. Utilized Docker to package and deploy the application onto a Virtual Private Server hosted with Linode Cloud Services.</p>
+            </div>
+            <div class="flex justify-end mt-4">
+                <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/react.png" alt="react" class="w-8 h-8 mx-2"/>
+                <img src="https://img.icons8.com/ios/50/FFFFFF/express-js.png" alt="express-js" class="w-8 h-8 mx-2"/>
+                <img src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db" class="w-8 h-8 mx-2">
+                <img src="https://img.icons8.com/fluency/48/docker.png" alt="docker" class="w-8 h-8 mx-2">
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 bg-secondary p-4 rounded-lg shadow-lg flex flex-col justify-between">
+            <div>
+                <h2 class="text-2xl font-semibold mb-2 text-light">Virtual Machines Provisioned by Proxmox</h2>
+                <p>Provisioned and managed two Ubuntu servers using Proxmox. One server is dedicated to running Docker with an IPvlan network setup. Utilized Nginx Proxy Manager for managing SSL certificates and domain configurations. The other server is running a custom Linux Kernel and is used for pentesting.</p>
+            </div>
+            <div class="flex justify-end mt-4">
+                <img src="https://img.icons8.com/color/48/jenkins.png" alt="Jenkins" class="w-8 h-8 mx-2">
+                <img src="https://iconape.com/wp-content/files/is/62025/png/gitea.png" alt="Gitea" class="w-8 h-8 mx-2">
+                <img src="https://img.icons8.com/fluency/48/docker.png" alt="docker" class="w-8 h-8 mx-2">
+                <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python" class="w-8 h-8 mx-2">
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 bg-secondary p-4 rounded-lg shadow-lg flex flex-col justify-between">
+            <div>
+                <h2 class="text-2xl font-semibold mb-2 text-light">Monitoring and Security for Self-hosted Services</h2>
+                <p>Deployed various services such as UptimeKuma for website monitoring and Grafana for monitoring Proxmox clusters and network connectivity. Ensured all services are hosted locally with SSL certificates and security measures in place. Due to CGNAT, services are accessible through a VPN solution like Twingate.</p>
+            </div>
+            <div class="flex justify-end mt-4">
+                <img src="https://img.icons8.com/color/48/ubuntu--v1.png" alt="Ubuntu" class="w-8 h-8 mx-2">
+                <img src="https://img.icons8.com/fluency/48/docker.png" alt="Docker" class="w-8 h-8 mx-2">
+                <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python" class="w-8 h-8 mx-2">
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 bg-secondary p-4 rounded-lg shadow-lg flex flex-col justify-between">
+            <div>
+                <h2 class="text-2xl font-semibold mb-2 text-light">Virtualization Lab with Proxmox</h2>
+                <p>Established a Proxmox VE environment to create and manage virtual machines for testing and development. Configured virtual networks and storage solutions to simulate real-world IT infrastructure scenarios. Explored high-availability and disaster recovery features.</p>
+            </div>
+            <div class="flex justify-end mt-4">
+                <img src="https://img.icons8.com/fluency/48/proxmox.png" alt="Proxmox" class="w-8 h-8 mx-2">
+                <img src="https://img.icons8.com/color/48/debian.png" alt="Linux" class="w-8 h-8 mx-2">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
